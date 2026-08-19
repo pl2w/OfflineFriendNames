@@ -55,7 +55,7 @@ jobs:
         with:
           name: ShowFriends
           path: |
-            ShowFriends/bin/Release/netstandard2.1/ShowFriends.dll
+            OfflineFriendNames/bin/Release/netstandard2.1/OfflineFriendNames.dll
           if-no-files-found: error
           retention-days: 7
 
@@ -74,5 +74,5 @@ jobs:
           tag_name: ${{ inputs.version }}
           name: ${{ inputs.version }}
           prerelease: ${{ inputs.prerelease }}
-          files: ShowFriends/bin/Release/netstandard2.1/ShowFriends.dll
+          files: OfflineFriendNames/bin/Release/netstandard2.1/OfflineFriendNames.dll
           generate_release_notes: true
